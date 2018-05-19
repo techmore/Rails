@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @ledger.date %>
+</p>
+
+<p>
+  <strong>Payer:</strong>
+  <%= @ledger.payer %>
+</p>
+
+<p>
+  <strong>Check details:</strong>
+  <%= @ledger.check_details %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @ledger.department %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @ledger.amount %>
+</p>
+
+<p>
+  <strong>Cobra:</strong>
+  <%= @ledger.cobra %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @ledger.notes %>
+</p>
+
+<%= link_to 'Edit', edit_ledger_path(@ledger) %> |
+<%= link_to 'Back', ledgers_path %>
