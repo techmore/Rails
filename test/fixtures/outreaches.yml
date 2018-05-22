@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-05-22 02:06:40
+  person_served: MyString
+  location: MyString
+  job_coach: MyString
+  hour: MyString
+  goal: MyText
+  data: MyText
+  assessment: MyText
+  progress: MyText
+
+two:
+  date: 2018-05-22 02:06:40
+  person_served: MyString
+  location: MyString
+  job_coach: MyString
+  hour: MyString
+  goal: MyText
+  data: MyText
+  assessment: MyText
+  progress: MyText

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Outreaches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Person served</th>
+      <th>Location</th>
+      <th>Job coach</th>
+      <th>Hour</th>
+      <th>Goal</th>
+      <th>Data</th>
+      <th>Assessment</th>
+      <th>Progress</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @outreaches.each do |outreach| %>
+      <tr>
+        <td><%= outreach.date %></td>
+        <td><%= outreach.person_served %></td>
+        <td><%= outreach.location %></td>
+        <td><%= outreach.job_coach %></td>
+        <td><%= outreach.hour %></td>
+        <td><%= outreach.goal %></td>
+        <td><%= outreach.data %></td>
+        <td><%= outreach.assessment %></td>
+        <td><%= outreach.progress %></td>
+        <td><%= link_to 'Show', outreach %></td>
+        <td><%= link_to 'Edit', edit_outreach_path(outreach) %></td>
+        <td><%= link_to 'Destroy', outreach, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Outreach', new_outreach_path %>

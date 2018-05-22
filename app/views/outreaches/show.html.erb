@@ -1,0 +1,46 @@
+<br>
+
+<img src="https://cea-nj.org/wp-content/uploads/2017/03/cropped-logo-e1491334044379.jpg" height="25%" width="25%">
+<br><br><br><br><br><br>
+
+<table style="width:100%">
+  <tr>
+     <th><font size="6">OUTREACH NOTE</th>
+     <th><font size="4"><strong>Date:</strong>       
+         <%= @outreach.date %></th>
+  </tr><tr>
+      <th><font size="4"><strong>Person served:</strong
+        <%= @outreach.person_served %></th>
+      <th><font size="4"><strong>Location:</strong>
+         <%= @outreach.location %></th>
+  </tr><tr>
+     <th><font size="4"><strong>Job coach:</strong>
+         <%= @outreach.job_coach %></th>
+     <th><font size="4"><strong>Hour:</strong>
+         <%= @outreach.hour %></th>
+  </tr>
+</table>
+
+<br><br><br>
+<p>
+<font size="4"><strong>Goal: (Indicate the reason and focus of the meeting; what will be accomplished during the meeting).</strong><br><br>
+  <%= @outreach.goal %>
+</p>
+
+<p>
+<font size="4"><strong>Data: (Describe what occurred during the meeting; utilize statements made by worker and client.)</strong><br><br>
+  <%= @outreach.data %>
+</p>
+
+<p>
+<font size="4"><strong>Assessment: (Indicate impressions, area of concern and focus that need to be addressed.)</strong><br><br>
+  <%= @outreach.assessment %>
+</p>
+
+<p>
+<font size="4"><strong>Progress: (What was accomplished during the meeting and other progress by person served.)</strong><br><br>
+  <%= @outreach.progress %>
+</p>
+
+<%= link_to 'Edit', edit_outreach_path(@outreach) %> |
+<%= link_to 'Back', outreaches_path %>

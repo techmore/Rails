@@ -1,0 +1,62 @@
+<%= form_with(model: outreach, local: true) do |form| %>
+  <% if outreach.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(outreach.errors.count, "error") %> prohibited this outreach from being saved:</h2>
+
+      <ul>
+      <% outreach.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :person_served %>
+    <%= form.text_field :person_served %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :job_coach %>
+    <%= form.text_field :job_coach %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hour %>
+    <%= form.text_field :hour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goal %>
+    <%= form.text_area :goal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.text_area :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :assessment %>
+    <%= form.text_area :assessment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :progress %>
+    <%= form.text_area :progress %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
